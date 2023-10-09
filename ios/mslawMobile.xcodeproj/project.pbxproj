@@ -30,7 +30,7 @@
 		00E356EE1AD99517003FC87E /* mslawMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mslawMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* mslawMobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mslawMobileTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* mslawMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mslawMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07F961A680F5B00A75B9A /* AllawDebug.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllawDebug.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = mslawMobile/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = AppDelegate.mm; path = mslawMobile/AppDelegate.mm; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = mslawMobile/Images.xcassets; sourceTree = "<group>"; };
@@ -131,7 +131,7 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* mslawMobile.app */,
+				13B07F961A680F5B00A75B9A /* AllawDebug.app */,
 				00E356EE1AD99517003FC87E /* mslawMobileTests.xctest */,
 			);
 			name = Products;
@@ -191,7 +191,7 @@
 			);
 			name = mslawMobile;
 			productName = mslawMobile;
-			productReference = 13B07F961A680F5B00A75B9A /* mslawMobile.app */;
+			productReference = 13B07F961A680F5B00A75B9A /* AllawDebug.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -489,6 +489,8 @@
 				DEVELOPMENT_TEAM = 43ZDDQSPCK;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = mslawMobile/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Allaw;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -500,7 +502,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.mslaw.allaw.app;
-				PRODUCT_NAME = mslawMobile;
+				PRODUCT_NAME = AllawDebug;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -516,6 +518,8 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 43ZDDQSPCK;
 				INFOPLIST_FILE = mslawMobile/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Allaw;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -527,7 +531,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = org.mslaw.allaw.app;
-				PRODUCT_NAME = mslawMobile;
+				PRODUCT_NAME = Allaw;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
