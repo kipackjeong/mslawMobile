@@ -501,7 +501,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.mslaw.allaw.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mslaw.allaw.app;
 				PRODUCT_NAME = AllawDebug;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -530,7 +530,7 @@
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = org.mslaw.allaw.app;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mslaw.allaw.app;
 				PRODUCT_NAME = Allaw;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
