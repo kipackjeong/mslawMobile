@@ -1,8 +1,12 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {SafeAreaView} from 'react-native';
+import SplashScreen from 'react-native-splash-screen';
 import WebView from 'react-native-webview';
 
 function App(): JSX.Element {
+  useEffect(() => {
+    SplashScreen.hide();
+  }, []);
   return (
     <SafeAreaView style={{flex: 1}}>
       <WebView
@@ -38,4 +42,5 @@ function App(): JSX.Element {
     </SafeAreaView>
   );
 }
+
 export default App;
