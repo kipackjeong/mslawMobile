@@ -56,7 +56,7 @@ function Payment({userCode, data}: any) {
         pg: 'kakaopay',
         ...data,
         app_scheme: 'mslawMobile',
-        m_redirect_url: data.redirect_url,
+        // m_redirect_url: 'mslawMobile:' + data.redirect_url,
       }}
       callback={callback}
     />

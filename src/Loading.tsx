@@ -1,11 +1,11 @@
 import React from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, StyleSheet, ActivityIndicator} from 'react-native';
 
 export function Loading() {
   const {container} = styles;
   return (
     <View style={container}>
-      <Text>잠시만 기다려주세요...</Text>
+      <ActivityIndicator size="large" />
     </View>
   );
 }
@@ -13,6 +13,8 @@ export function Loading() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });
 
