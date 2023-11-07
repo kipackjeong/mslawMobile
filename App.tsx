@@ -29,20 +29,16 @@ function App(props: any) {
               break;
             case 'kakao_pay':
               try {
-                console.log('userCode: ', userCode);
-                console.log('data: ', data);
-                console.log('props.componentId: ', props.componentId);
-                // const params = {userCode, data};
-                const navResult = await Navigation.push(props.componentId, {
+                await Navigation.push(props.componentId, {
                   component: {
                     name: 'Payment',
                     passProps: {
+                      pg: 'kakaopay',
                       userCode: userCode,
                       data: data,
                     },
                   },
                 });
-                console.log('navResult: ', navResult);
               } catch (e) {}
           }
         }}
