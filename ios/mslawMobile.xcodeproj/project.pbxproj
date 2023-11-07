@@ -489,7 +489,7 @@
 				DEVELOPMENT_TEAM = 43ZDDQSPCK;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = mslawMobile/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Allaw;
+				INFOPLIST_KEY_CFBundleDisplayName = "올로 - 모두를 위한 법률서비스";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -518,7 +518,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 43ZDDQSPCK;
 				INFOPLIST_FILE = mslawMobile/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = Allaw;
+				INFOPLIST_KEY_CFBundleDisplayName = "올로 - 모두를 위한 법률서비스";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

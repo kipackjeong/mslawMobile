@@ -23,6 +23,7 @@
     "react-native-webview": "11"
   },
   "devDependencies": {
+    "jetifier": "^2.0.0",
     "@babel/core": "^7.20.0",
     "@babel/preset-env": "^7.20.0",
     "@babel/runtime": "^7.20.0",
