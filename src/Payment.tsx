@@ -1,9 +1,6 @@
 import React from 'react';
-// import type {StackScreenProps} from '@react-navigation/stack';
-// import type {RootStackParamList} from '../App';
 import IMP from 'iamport-react-native';
 import Loading from './Loading';
-// import {SafeAreaView} from 'react-native';
 
 function getBoolean(value: string | boolean | undefined) {
   if (typeof value === 'boolean') {
@@ -15,7 +12,7 @@ function getBoolean(value: string | boolean | undefined) {
   return undefined;
 }
 
-function Payment({userCode, data}: any) {
+function Payment({pg, userCode, data}: any) {
   /* 가맹점 식별코드, 결제 데이터 추출 */
   //   const userCode = route.params?.userCode;
   //   const data = route.params?.data;
@@ -53,7 +50,7 @@ function Payment({userCode, data}: any) {
       userCode={userCode as string}
       loading={<Loading />}
       data={{
-        pg: 'kakaopay',
+        pg: pg,
         ...data,
         app_scheme: 'mslawMobile',
         // m_redirect_url: 'mslawMobile:' + data.redirect_url,
