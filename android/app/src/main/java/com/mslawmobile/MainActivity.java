@@ -1,4 +1,4 @@
-package com.mslawmobile;
+package com.mslaw.app;
 
 import com.reactnativenavigation.NavigationActivity;
 import com.facebook.react.ReactActivityDelegate;

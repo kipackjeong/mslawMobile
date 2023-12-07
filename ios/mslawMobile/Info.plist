@@ -30,11 +30,14 @@
 			<key>CFBundleURLSchemes</key>
 			<array>
 				<string>mslawMobile</string>
+				<string>kakao788696</string>
 			</array>
 		</dict>
 	</array>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
+	<key>KAKAO_APP_KEY</key>
+	<string>9c20d83e2136733f149c4a21b8bf0aaf</string>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
 	<key>LSApplicationQueriesSchemes</key>

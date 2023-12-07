@@ -1,31 +1,69 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useRef} from 'react';
 import {Navigation} from 'react-native-navigation';
 import SplashScreen from 'react-native-splash-screen';
 import WebView from 'react-native-webview';
-import {SafeAreaView} from 'react-native';
-// import {login} from '@react-native-seoul/kakao-login';
+import {Alert, BackHandler, SafeAreaView} from 'react-native';
+import {KakaoProfile, getProfile, login} from '@react-native-seoul/kakao-login';
 
 function App(props: any) {
+  const wvRef = useRef<WebView>(null);
+
   useEffect(() => {
     SplashScreen.hide();
   }, []);
+
+  const signInWithKakao = async (): Promise<void> => {
+    try {
+      const token = await login();
+      const profile: KakaoProfile = await getProfile();
+      const message = {
+        type: 'kakao_profile',
+        accessToken: token.accessToken,
+        refreshToken: token.refreshToken,
+        ...profile,
+      };
+
+      wvRef.current?.postMessage(JSON.stringify(message));
+      wvRef.current?.clearCache?.(true);
+    } catch (error) {
+      console.log(error);
+      Alert.alert('카카오 로그인 실패');
+    }
+  };
+
+  const handleBackButtonPress = (): boolean | null => {
+    try {
+      wvRef.current?.goBack();
+      return true;
+    } catch (error) {
+      console.log('[handleBackButtonPress] Error : ', error);
+      return false;
+    }
+  };
+
+  useEffect(() => {
+    BackHandler.addEventListener('hardwareBackPress', handleBackButtonPress);
+    return () => {
+      BackHandler.removeEventListener(
+        'hardwareBackPress',
+        handleBackButtonPress,
+      );
+    };
+  }, []);
+
   return (
     <SafeAreaView style={{flex: 1}}>
       <WebView
+        ref={wvRef}
         style={{flex: 1}}
         source={{
           uri: 'https://allaw.kr/',
         }}
         onMessage={async event => {
-          console.log('event.nativeEvent.data: ', event.nativeEvent.data);
-          console.log(event.nativeEvent.data);
-          console.log(event.nativeEvent);
           const {message, userCode, data} = JSON.parse(event.nativeEvent.data);
-          console.log('message: ', message);
           switch (message) {
             case 'kakao_login':
-              // const token = await login();
-              // console.log('token', token);
+              signInWithKakao();
               break;
             case 'kakao_pay':
               try {

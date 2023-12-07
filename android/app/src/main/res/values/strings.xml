@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">올로 - 모두를 위한 법률서비스</string>
+    <string name="app_name">올로</string>
+    <string name="kakao_app_key">9c20d83e2136733f149c4a21b8bf0aaf</string>
 </resources>

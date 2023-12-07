@@ -75,13 +75,13 @@ android {
 
     compileSdkVersion rootProject.ext.compileSdkVersion
 
-    namespace "com.mslawmobile"
+    namespace "com.mslaw.app"
     defaultConfig {
-        applicationId "com.mslawmobile"
+        applicationId "com.mslaw.app"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 10002
-        versionName '1.0.2'
+        versionCode 10005
+        versionName '1.0.5'
     }
     signingConfigs {
         release {

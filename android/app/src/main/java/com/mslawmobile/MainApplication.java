@@ -1,4 +1,4 @@
-package com.mslawmobile;
+package com.mslaw.app;
 
 import android.app.Application;
 import com.facebook.react.PackageList;
