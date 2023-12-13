@@ -61,6 +61,10 @@
 		</dict>
 		<key>NSLocationWhenInUseUsageDescription</key>
 		<string></string>
+		<key>NSDocumentsFolderUsageDescription</key>
+		<string></string>
+		<key>NSDownloadsFolderUsageDescription</key>
+		<string></string>
 		<key> UILaunchStoryboardName</key>
 		<string>LaunchScreen.storyboard</string>
 		<key> UIRequiredDeviceCapabilities</key>
