@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "build:android": "npx react-native build-android --mode=release",
+    "clean:android": "cd /Users/kipackjeong/Desktop/programming/projects/allaw/mslawMobile/android && ./gradlew clean && cd ..",
+    "clean:ios": "cd /Users/kipackjeong/Desktop/programming/projects/allaw/mslawMobile/ios && xattr -w com.apple.xcode.CreatedByBuildSystem true /Users/kipackjeong/Desktop/programming/projects/allaw/mslawMobile/ios/build && xcodebuild clean && cd ..",
     "android": "react-native run-android",
     "android:prod": "react-native run-android --mode=release",
-    "ios": "react-native run-ios",
+    "ios": "react-native run-ios --simulator=\"iPhone 13 Pro\"",
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest"
